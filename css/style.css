@@ -1,0 +1,258 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+ul[class], ol[class] {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* font-family: 'Raleway', sans-serif; */
+
+body {
+  max-height: 100vh;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  color: #242121;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  color: #01353E;
+  text-align: center;
+  position: relative;
+}
+
+.title::after {
+  content: '/';
+  position: absolute;
+  width: 48px;
+  height: 85px;
+  font-size: 72px;
+  line-height: 85px;
+  color: #00b2a0
+}
+
+.header {
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.header__top-inner {
+  padding-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  margin-right: 245px;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__list-item+.menu__list-item {
+  margin-left: 45px;
+}
+
+.menu__list-link {
+  padding: 0 3px 5px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+  transition: all .5s;
+}
+
+.menu__list-link:hover {
+  border-bottom: 1px solid #00B2A0;
+}
+
+.header__content-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: calc(100vh - 93px);
+}
+
+.header__title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 200px;
+  line-height: 235px;
+  font-weight: 700;
+  color: #0D302C;
+  margin-top: auto;
+  text-transform: uppercase;
+}
+
+.header__subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000;
+  margin-bottom: auto;
+}
+
+.header__icon {
+  margin-bottom: 81px;
+}
+
+.about {
+  padding: 200px 0 170px;
+}
+
+.about__title {
+  margin-bottom: 100px;
+}
+
+.about__text {
+  display: flex;
+}
+
+.about__text-item+.about__text-item {
+  margin-left: 120px;
+}
+
+.about__text-item p {
+  max-width: 480px;
+  padding-bottom: 30px;
+}
+
+.modified {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.expertise {
+  padding: 200px 0 170px;
+  background-color: #F8F8F8;
+}
+
+.expertise__title {
+  margin-bottom: 100px;
+}
+
+.expertise__items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.expertise__item {
+  width: 350px;
+}
+
+.expertise__item+.expertise__item {
+  margin-left: 75px;
+}
+
+.expertise__title-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.expertise__item-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #242121;
+  text-transform: uppercase;
+  max-width: 155px;
+  height: 55px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.expertise__item-title::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: -60px;
+  width: 50px;
+  height: 50px;
+}
+
+.expertise__item--residence::before {
+  background-image: url('../images/residance.svg');
+}
+
+.expertise__item--flight::before {
+  background-image: url('../images/flight.svg');
+}
+
+.expertise__item--training::before {
+  background-image: url('../images/training.svg');
+}
+
+.expertise__inner-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expertise__info {
+  width: 350px;
+  margin-right: 250px;
+}
+
+.expertise__info-item {
+  position: relative;
+}
+
+.expertise__info-item::before {
+  content: ' ';
+  position: absolute;
+  background-image: url('../images/vector1.svg');
+}
+
+.expertise__info-item span {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;
+  color: #242121;
+}
+
+.expertise__text p {
+  padding-bottom: 30px;
+}
